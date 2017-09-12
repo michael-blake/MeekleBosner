@@ -1,15 +1,17 @@
 #latest-release{
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   /*padding: 6em 0;*/
   display: inline-flex;
+  flex-direction: column;
+  flex-grow: 1;
   color: #CCCCCC;
 }
 
 .release-wrapper{
   display: inherit;
-  margin: 0 auto;
-  margin-top: 6em;
+  margin: 6em auto;
+  /*height: 100vh;*/
 }
 
 .album-art{
@@ -17,7 +19,7 @@
   height: 50vw;
   max-width: 600px;
   max-height: 600px;
-  /*margin-right: 1em;*/
+  margin: auto;
   background-position: right;
   background-repeat: no-repeat;
   background-size: cover;
@@ -26,6 +28,7 @@
 
 .release-desc{
   margin-left: 1em;
+  margin-top: 1em;
   align-content: center;
   display: grid;
 }
@@ -61,11 +64,13 @@
 
 @media(max-width: 768px){
   .release-wrapper{
-    display: block;
+    display: inline-flex;
+    flex-direction: column;
   }
   .album-art{
-    width: 70vw;
-    height: 70vw;
+    width: 65vw;
+    height: 65vw;
+    margin: 0 auto;
   }
   .release-desc{
     font-size: 4vw;

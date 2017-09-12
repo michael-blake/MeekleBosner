@@ -1,0 +1,94 @@
+html{
+  height: 100%;
+  margin: 0;
+}
+
+body{
+   font-family: 'Lato';
+   margin: auto;
+}
+
+body.nav-open{
+  overflow: hidden !important;
+}
+
+@font-face{
+  font-family: 'Lato';
+  src: url("/fonts/Lato-Regular.ttf");
+}
+
+.attic{
+  background-image: url("images/Colorado.png");
+  width: 100%;
+  height: 100vh;
+  /*position: fixed;*/
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.logo{
+  position: relative;
+  top: 10vh;
+  margin: auto;
+  width: calc(10*(1vh + 1vw));
+  height: calc(10*(1vh + 1vw));
+}
+
+.circle{
+  margin: 0 auto;
+  background-size: cover;
+  /*width: calc(15 * (1vh + 1vw));
+  height: calc(15 * (1vh + 1vw));*/
+  width: 100%;
+  height: 100%;
+  max-width: 300px;
+  max-height: 300px;
+  border: 1em solid rgba(35, 73, 106, .8);
+  border-radius: 15em;
+}
+
+.circle-2{
+  position: relative;
+  top: calc(-40%);
+}
+
+.bedroom{
+  /*width: 100%;*/
+  /*height: 100vh;*/
+  background-color: rgba(35, 73, 106, 1);
+}
+
+.menu-bar{
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+}
+
+.menu-logo{
+  float: left;
+  padding: .4em;
+  padding-top: .3em;
+  font-size: 3em;
+  font-variant: small-caps;
+  font-weight: bold;
+  cursor: pointer;
+  color: #CCCCCC;
+  transition: 0.4s all linear;
+}
+
+/*.nav-open .menu-logo{
+  color: #CCCCCC;
+}*/
+
+.menu-hamburger{
+  float: right;
+  font-size: 3em;
+  padding: .4em;
+}
+
+.fa{
+  line-height: 1.4 !important;
+}

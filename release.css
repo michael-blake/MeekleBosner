@@ -43,6 +43,10 @@
   margin-bottom: 0.5em;
 }
 
+.icon-wrapper{
+  width: 1em;
+}
+
 .release-links{
   font-size: 1.2em;
 }
@@ -51,6 +55,8 @@
   cursor: pointer;
   display: flex;
   margin-bottom: 0.2em;
+  color: inherit;
+  text-decoration: none;
 }
 
 .release-link-title{

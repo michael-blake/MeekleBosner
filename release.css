@@ -22,7 +22,9 @@
 .album-art{
   max-width: 600px;
   max-height: 600px;
-  /*margin: auto;*/
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 1;
   height: 100%;
   width: 100%;
   background-position: right;
@@ -90,6 +92,7 @@
   .album-art{
     width: 100%;
     background-size: contain;
+    background-position: center;
   }
   .release-desc{
     margin-top: 2em;

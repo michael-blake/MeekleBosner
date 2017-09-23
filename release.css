@@ -1,6 +1,6 @@
 #latest-release{
   width: 100%;
-  min-height: 100vh;
+  min-heig/ht: 100vh;
   /*padding: 6em 0;*/
   display: inline-flex;
   flex-direction: column;
@@ -69,6 +69,9 @@
 }
 
 @media(max-width: 768px){
+  #latest-release{
+    max-height: 100vh;
+  }
   .release-wrapper{
     display: inline-flex;
     flex-direction: column;

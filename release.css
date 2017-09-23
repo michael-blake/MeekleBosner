@@ -9,21 +9,32 @@
 }
 
 .release-wrapper{
-  display: inherit;
-  margin: 6em auto;
+  display: flex;
+  margin: 0 auto;
   /*height: 100vh;*/
+  padding-top: 2em;
+  display: flex;
+  flex-grow: 1;
+  min-width: 69%;
+  align-items: center;
 }
 
 .album-art{
-  width: 50vw;
-  height: 50vw;
   max-width: 600px;
   max-height: 600px;
-  margin: auto;
+  /*margin: auto;*/
+  height: 100%;
+  width: 100%;
   background-position: right;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-image: url("images/TheMachine.png");
+}
+
+.album-art:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
 }
 
 .release-desc{
@@ -74,14 +85,13 @@
   .release-wrapper{
     display: inline-flex;
     flex-direction: column;
+    padding-top: 5em;
   }
   .album-art{
-    width: 65vw;
-    height: 65vw;
-    margin: 0 auto;
+    width: 100%;
+    background-size: contain;
   }
   .release-desc{
-    font-size: 4vw;
     margin-top: 2em;
     margin-left: 0;
   }

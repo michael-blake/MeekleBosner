@@ -34,6 +34,7 @@ var HSSR = {
 
   goHome: function() {
     window.scrollTo(0, 0);
+    this.body.classList.remove('nav-open');
   },
 
   toggleNav: function() {

@@ -1,4 +1,4 @@
-#latest-release{
+#other-projects{
   width: 100%;
   min-height: 100vh;
   padding-bottom: 6em;
@@ -6,54 +6,59 @@
   flex-direction: column;
   flex-grow: 1;
   color: #CCCCCC;
+  justify-content: center;
+  text-align: center;
 }
 
-.release-wrapper{
+.project-wrapper{
   display: flex;
   margin: 0 auto;
-  /*height: 100vh;*/
   padding-top: 2em;
   display: flex;
   flex-grow: 1;
-  width: 80%;
   justify-content: center;
-  /*min-width: 69%;*/
+  flex-direction: column;
+  width: 80%;
   align-items: center;
 }
 
-.album-art{
+.project-image{
   max-width: 600px;
   max-height: 600px;
   display: flex;
   flex-direction: column;
   flex-shrink: 1;
   max-height: 50vh;
-  width: 50%;
-  background-position: right;
+  width: 100%;
+  background-position-x: center;
+  background-position-y: bottom;
   background-repeat: no-repeat;
   background-size: contain;
-  background-image: url("images/TheMachine.png");
 }
 
-.album-art:after {
+.project-image:after {
   content: "";
   display: block;
   padding-bottom: 100%;
 }
 
-.release-desc{
+.project-image:hover {
+  filter: grayscale(100%);
+}
+
+.project-desc{
   margin-left: 1em;
   align-content: center;
   /*display: grid;*/
 }
 
-.release-title{
-  font-size: 2em;
+.project-title{
+  font-size: 2.6em;
   margin-bottom: 0.3em;
 }
 
-.release-subtitle{
-  font-size: 1.5em;
+.project-subtitle{
+  font-size: 1.2em;
   margin-bottom: 0.5em;
 }
 
@@ -83,19 +88,18 @@
 }
 
 @media(max-width: 768px){
-  #latest-release{
+  #other-projects{
     max-height: 100vh;
   }
-  .release-wrapper{
+  .project-wrapper{
     display: inline-flex;
     flex-direction: column;
     padding-top: 5em;
   }
-  .album-art{
+  .project-art{
     background-position: center;
-    width: 100%;
   }
-  .release-desc{
+  .project-desc{
     margin-top: 2em;
     margin-left: 0;
   }

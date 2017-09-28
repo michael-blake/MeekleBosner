@@ -23,7 +23,6 @@ body.nav-open{
   height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-position: center;
   position: fixed;
   z-index: -1;
